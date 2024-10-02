@@ -16,7 +16,6 @@ RUN apt-get update && apt-get install -y \
     libssl-dev \
     libsqlite3-dev \
     libpq-dev \
-    libsoap2-dev \
     libxslt1-dev \
     gnupg2 \
     software-properties-common \
