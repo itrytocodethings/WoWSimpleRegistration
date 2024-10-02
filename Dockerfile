@@ -34,7 +34,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Set up Nginx configuration
 RUN rm /etc/nginx/sites-enabled/default
-COPY ./nginx/default.conf /etc/nginx/conf.d/
+COPY ./nginx.conf /etc/nginx/conf.d/
 
 COPY --chown=www-data:www-data . /var/www/html/public
 
